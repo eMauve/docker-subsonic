@@ -7,7 +7,7 @@ Create the data container with:
 ```
 sudo docker run --name subsonic_data \
 	-v /data/music:/var/music \
-	emauve/subsonic:5.3 /bin/true
+	emauve/subsonic:6.0 /bin/true
 ```
 
 
@@ -23,7 +23,7 @@ sudo docker run -d -t -i \
 	--publish 8100:4040 \
 	--name="subsonic_app" \
 	--volumes-from subsonic_data \
-	emauve/subsonic:5.3
+	emauve/subsonic:6.0
 ```
 
 
